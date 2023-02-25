@@ -56,7 +56,10 @@ Tenemos entonces
 ```
 Select max(stock),id from productos order by max(stock) desc limit 1;
 ```
+Esta consulta devuelve una tabla con el mayor numero que hay en stock y el id al cual pertenece ese producto.
+
 2. **Consulta para el producto mas vendido**
 ```
 select sum(cantidad), producto_id from ventas group by producto_id
 ```
+Esta consulta devuelve una tabla con la cantidad de unidades venidad y el respectivo id de cada producto.
